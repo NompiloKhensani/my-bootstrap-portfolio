@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
 .banner-wrap {
   background-image: url(assets/banner-image.jpg);
   background-size: cover;
@@ -20,27 +26,105 @@
   position: absolute;
   top: 0;
 }
-.nav-masthead .nav-link {
-  padding: 0.2rem 0;
-  font-weight: 700;
-  font-size: 18px;
-  color: #fff;
-  background-color: transparent;
-  border-bottom: 0.25rem solid transparent;
-}
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, 0.25);
-}
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
+
 .scrolling {
   background: black;
   opacity: 60%;
   transition: all 0.5s;
+}
+.nav-masthead .nav-link {
+  padding: 0.2rem 0;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000 !important;
+  background-color: transparent;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  color: #000 !important;
+  border-bottom-color: #000 !important;
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #000 !important;
+  border-bottom-color: #000 !important;
+  font-weight: 800;
+}
+
+header h3 {
+  color: #000 !important;
+}
+
+header,
+.card,
+footer,
+#about-us .card,
+#projects .card,
+#contact .card {
+  background-color: #ffffff !important;
+  border-color: #ddd !important;
+}
+
+footer {
+  background-color: #ffffff !important;
+  color: #000 !important;
+}
+
+footer a {
+  color: #0d6efd !important;
+}
+
+footer a:hover {
+  color: #0a58ca !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212 !important;
+    color: #f1f1f1 !important;
+  }
+  header h3,
+  .nav-masthead .nav-link,
+  .nav-masthead .active {
+    color: #fff !important;
+  }
+  .nav-masthead .nav-link:hover,
+  .nav-masthead .nav-link:focus {
+    color: #fff !important;
+    border-bottom-color: #fff !important;
+  }
+  .nav-masthead .active {
+    color: #fff !important;
+    border-bottom-color: #fff !important;
+  }
+  header {
+    opacity: 0.5;
+  }
+  header,
+  .card,
+  footer,
+  #about-us .card,
+  #projects .card,
+  #contact .card {
+    background-color: #1f1f1f !important;
+    border-color: #333 !important;
+  }
+  footer {
+    background-color: #1f1f1f !important;
+    color: #f1f1f1 !important;
+  }
+
+  footer a {
+    color: #66b3ff !important;
+  }
+
+  footer a:hover {
+    color: #9f7cff !important;
+  }
 }
